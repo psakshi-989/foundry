@@ -12,7 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/products', express.static(path.join(__dirname, 'products')));
 
 
-//const uri = 'mongodb+srv://foundry:VgRZBS6ydszRHYZA@cluster0.atbz8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(uri)
 .then(() => console.log('MongoDB Atlas connected'))
